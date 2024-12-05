@@ -1,6 +1,6 @@
 def main():
-    Arquivo_A = "teste.txt"
-    Arquivo_B = "teste2.txt"
+    file_A = "teste.txt"
+    file_B = "teste2.txt"
     
     # Cria um conjunto para armazenar palavras existentes
     palavras_existentes = set()
@@ -11,7 +11,7 @@ def main():
     3 - Adiciona a palavra ao conjunto;
     4 - Adiciona à lista filtrada
     '''
-    with open(Arquivo_B, 'r', encoding='utf-8') as file:
+    with open(file_B, 'r', encoding='utf-8') as file:
         for linha in file:
             palavra = linha.strip() 
             palavras_existentes.add(palavra)  
@@ -25,20 +25,20 @@ def main():
     3 - Verifica se a palavra está no conjunto;
     4 - Adiciona à lista filtrada
     '''
-    with open(Arquivo_A, 'r', encoding='utf-8') as file:
+    with open(file_A, 'r', encoding='utf-8') as file:
         for linha in file:
             palavra = linha.strip()  
             if palavra not in palavras_existentes:  
                 DICIONÁRIO_COMPLETO_ID.append(palavra)  
     
-    Arquivo_C = "Arquivo_testado.txt"
+    file_C = "Subtracted.txt"
     
     # Salva as palavras filtradas em um novo arquivo
-    with open(Arquivo_C, 'w', encoding='utf-8') as file:
+    with open(file_C, 'w', encoding='utf-8') as file:
         for palavra in DICIONÁRIO_COMPLETO_ID:
             file.write(palavra + '\n')  
     
-    print(f"As palavras filtradas foram salvas em '{Arquivo_C}'.")
+    print(f"As palavras filtradas foram salvas em '{file_C}'.")
 
 if __name__ == "__main__":
     main()  

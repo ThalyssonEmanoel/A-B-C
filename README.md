@@ -1,36 +1,23 @@
-# Filtrador de palavras
-Este script em Python é um script simples para filtrar palavras de um arquivo, removendo aquelas que já existem em outro arquivo. O resultado é salvo em um novo arquivo.
+# Word Filter
+  This Python script is a simple tool for filtering words from a file by removing those that already exist in another file. The result is saved in a new file.
 
-## Funcionalidade
-O código realiza as seguintes operações:
+## Functionality
+  The script performs the following operations:
 
-1. Leitura de Arquivos:
-- Lê duas listas de palavras a partir de arquivos de texto:
-  - `teste.txt` (Arquivo_A): Contém a lista de palavras a serem filtradas.
-  - `teste2.txt` (Arquivo_B): Contém a lista de palavras que já existem e que não devem ser incluídas no resultado.
+1. File Reading:
+- Reads two lists of words from text files:
+  - `teste.txt` (File_A): Contains the list of words to be filtered.
+  - `teste2.txt`  (File_B): Contains the list of words to exclude from the result.
 
-2. Filtragem:
-- Compara as palavras do Arquivo_A com as palavras do Arquivo_B e cria uma nova lista que contém apenas as palavras que não estão presentes no Arquivo B.
+2. Filtering:
+- Compares the words in File_A with those in File_B and creates a new list containing only the words not found in File_B.
 
-3. Saída:
-- Salva a lista filtrada em um novo arquivo chamado Subtraído.txt.
+3. Output:
+- Save the filtered list in a new file called Subtracted.txt.
 
-## Estrutura do Código
+## Code Structure
 
-- Uso de Conjuntos: Utiliza um conjunto (`set`) para armazenar as palavras existentes, permitindo uma verificação rápida durante a filtragem.
+- Use of Sets: Uses a set (`set`) to store existing words, allowing quick verification during filtering.
 
-## Como Usar
-
-1. Preparação:
-- Certifique-se de que os arquivos `teste.txt` e `teste2.txt` estão na mesma pasta que o script.
-
-2. Execução:
-- Execute o script:
-
-```
-python a-b.py
-```
-
-## Conclusão
-   Este script é útil para gerenciar listas de palavras, garantindo que palavras já existentes sejam removidas de uma nova lista. É uma solução prática para situações em que você precisa lidar com palavras duplicadas. Ele é
-bastante útil quando se trata de arquivos muito extensos...
+## Conclusion
+  This script is a practical solution for managing word lists by ensuring that duplicate or already-existing words are excluded from a new list. It is especially useful when working with large files, as it handles extensive datasets efficiently.
