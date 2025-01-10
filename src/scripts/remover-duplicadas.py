@@ -1,11 +1,11 @@
-from collections import OrderedDict
+from collections import OrderedDict as ord
 import os
 '''
 @remove_duplicates - Função que remove palavras duplicadas de um arquivo de texto.
 '''
 def remove_duplicates(arquivo_base, arquivo_final):
   
-  palavras_unicas = OrderedDict()
+  palavras_unicas = ord()
 
   with open(arquivo_base, 'r', encoding='utf-8') as file:
     for line in file:
