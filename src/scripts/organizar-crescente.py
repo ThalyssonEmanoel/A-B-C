@@ -2,11 +2,12 @@ import re
 import os
 
 """
- Esse script lê um arquivo de palavras e organiza as palavras na seguinte ordem:
-  - palavras sem sufixo numérico;
-  - palavras com sufixo numérico entre 0 e 100;
-  - palavras com sufixo numérico entre 1930 e 2030;
-  - O resto das palavras ele descarta.
+ Esse script lê um arquivo de palavras, organiza e salva elas na seguinte ordem:
+  - Palavras sem sufixo numérico, ordem alfabética;
+  - Palavras com sufixo numérico entre 0 e 100;
+  - Palavras com sufixo numérico entre 1930 e 2030;
+  - O resto das palavras seram descartadas;
+  - O resultado será salvo em um arquivo de texto chamado de "organizado-crescente.txt".
 """
 
 def ler_arquivo(nome_arquivo):
